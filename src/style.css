@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-dm bg-cream text-[#1A1A1A] overflow-x-hidden;
+  }
+}
+
+@layer components {
+  /* Fade-in animation */
+  .fade-in {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
+  }
+
+  /* Nav */
+  .nav-logo-shape {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  /* Hero badge pulse */
+  .badge-dot {
+    animation: pulse-dot 2s infinite;
+  }
+
+  /* Stat card */
+  .stat-card {
+    @apply bg-white/5 border border-gold/20 rounded-lg p-7 transition-all duration-200;
+  }
+  .stat-card:hover {
+    @apply bg-gold/[0.07] border-gold/50;
+  }
+
+  /* Service card top bar */
+  .service-card::before {
+    content: '';
+    @apply absolute top-0 left-0 right-0 h-[3px] bg-gold scale-x-0 origin-left transition-transform duration-300;
+  }
+  .service-card:hover::before {
+    @apply scale-x-100;
+  }
+
+  /* Timeline connector */
+  .timeline-item:not(:last-child) .timeline-dot-wrap::after {
+    content: '';
+    @apply absolute left-[17px] top-9 bottom-0 w-px bg-cream-dark;
+  }
+}
+
+@layer utilities {
+  .section-label {
+    @apply text-[11px] tracking-[0.14em] uppercase text-gold font-semibold mb-3;
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}

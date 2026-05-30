@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Cemara Golden Group – Pusat Penyelidikan Tanah & Topografi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-dm bg-cream text-[#1A1A1A] overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#0D3B2E]/[0.97] backdrop-blur-sm flex items-center justify-between px-[5vw] h-[68px] border-b border-[#C8923A]/30">
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 bg-[#C8923A] flex-shrink-0" style="clip-path:polygon(50% 0%,0% 100%,100% 100%)"></div>
+    <div class="font-playfair text-[15px] font-bold text-white leading-tight">
+      PT. Cemara Golden Group
+      <span class="block text-[10px] font-normal font-dm text-[#E4B06A] tracking-widest uppercase">Penyelidikan Tanah & Topografi</span>
+    </div>
+  </div>
+  <ul class="hidden md:flex gap-8 list-none">
+    <li><a href="#about" class="text-white/75 text-[13px] font-medium tracking-wide hover:text-[#E4B06A] transition-colors no-underline">Tentang</a></li>
+    <li><a href="#services" class="text-white/75 text-[13px] font-medium tracking-wide hover:text-[#E4B06A] transition-colors no-underline">Layanan</a></li>
+    <li><a href="#portofolio" class="text-white/75 text-[13px] font-medium tracking-wide hover:text-[#E4B06A] transition-colors no-underline">Portofolio</a></li>
+    <li><a href="#legalitas" class="text-white/75 text-[13px] font-medium tracking-wide hover:text-[#E4B06A] transition-colors no-underline">Legalitas</a></li>
+    <li><a href="#kontak" class="bg-[#C8923A] text-white px-5 py-2 rounded text-[13px] font-semibold hover:bg-[#E4B06A] hover:text-[#0D3B2E] transition-all no-underline">Hubungi Kami</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="min-h-screen bg-[#0D3B2E] grid grid-cols-1 md:grid-cols-2 items-center px-[5vw] pt-28 pb-16 gap-16 relative overflow-hidden">
+  <div class="absolute -right-32 -top-32 w-[600px] h-[600px] bg-[#C8923A]/[0.07] rounded-full pointer-events-none"></div>
+  <div class="absolute left-[38%] -bottom-20 w-[400px] h-[400px] bg-[#1E6B52]/30 rounded-full pointer-events-none"></div>
+  <div class="relative z-10 fade-in">
+    <div class="inline-flex items-center gap-2 bg-[#C8923A]/15 border border-[#C8923A]/40 text-[#E4B06A] text-[11px] tracking-[0.12em] uppercase px-4 py-1.5 rounded-sm mb-6">
+      <span class="w-1.5 h-1.5 bg-[#C8923A] rounded-full" style="animation:pulse-dot 2s infinite"></span>
+      Beroperasi Sejak 2019
+    </div>
+    <h1 class="font-playfair text-[clamp(38px,5vw,64px)] font-black text-white leading-[1.1] mb-2">
+      <em class="not-italic text-[#C8923A]">Cemara</em><br>Golden Group
+    </h1>
+    <p class="font-playfair text-[clamp(16px,2vw,22px)] text-[#E4B06A] italic mb-6">Pusat Penyelidikan Tanah & Topografi</p>
+    <p class="text-[15px] leading-[1.75] text-white/70 max-w-[480px] mb-10">Mitra terpercaya dalam jasa penyelidikan tanah, geoteknik, dan pengukuran topografi untuk kebutuhan konstruksi pemerintah, swasta, dan perorangan di seluruh Indonesia.</p>
+    <div class="flex gap-4 flex-wrap">
+      <a href="#services" class="bg-[#C8923A] text-white px-7 py-3.5 rounded text-[14px] font-semibold tracking-wide border-2 border-[#C8923A] hover:bg-transparent hover:text-[#C8923A] transition-all no-underline">Lihat Layanan Kami</a>
+      <a href="#kontak" class="text-white/80 px-7 py-3.5 rounded text-[14px] font-medium border border-white/30 hover:border-[#E4B06A] hover:text-[#E4B06A] transition-all no-underline">Konsultasi Gratis</a>
+    </div>
+  </div>
+  <div class="relative z-10 fade-in grid grid-cols-2 gap-5 mt-12 md:mt-0">
+    <div class="bg-white/5 border border-[#C8923A]/20 rounded-lg p-7 hover:bg-[#C8923A]/[0.07] hover:border-[#C8923A]/50 transition-all">
+      <div class="font-playfair text-[40px] font-black text-[#C8923A] leading-none mb-2">6<span class="text-2xl text-[#E4B06A]">+</span></div>
+      <div class="text-[12px] text-white/55 tracking-wide uppercase leading-snug">Tahun Pengalaman Lapangan</div>
+    </div>
+    <div class="bg-white/5 border border-[#C8923A]/20 rounded-lg p-7 hover:bg-[#C8923A]/[0.07] hover:border-[#C8923A]/50 transition-all">
+      <div class="font-playfair text-[40px] font-black text-[#C8923A] leading-none mb-2">100<span class="text-2xl text-[#E4B06A]">+</span></div>
+      <div class="text-[12px] text-white/55 tracking-wide uppercase leading-snug">Proyek Terselesaikan</div>
+    </div>
+    <div class="bg-white/5 border border-[#C8923A]/20 rounded-lg p-7 hover:bg-[#C8923A]/[0.07] hover:border-[#C8923A]/50 transition-all">
+      <div class="font-playfair text-[40px] font-black text-[#C8923A] leading-none mb-2">4</div>
+      <div class="text-[12px] text-white/55 tracking-wide uppercase leading-snug">Jenis Layanan Utama</div>
+    </div>
+    <div class="bg-white/5 border border-[#C8923A]/20 rounded-lg p-7 hover:bg-[#C8923A]/[0.07] hover:border-[#C8923A]/50 transition-all">
+      <div class="font-playfair text-[40px] font-black text-[#C8923A] leading-none mb-2">2</div>
+      <div class="text-[12px] text-white/55 tracking-wide uppercase leading-snug">Tenaga Ahli Bersertifikat BNSP</div>
+    </div>
+    <div class="col-span-2 bg-[#C8923A]/10 border border-[#C8923A]/40 rounded-lg p-7">
+      <div class="font-playfair text-[20px] font-black text-white leading-snug mb-2">Jawa Tengah, DIY, Jawa Timur, Jabodetabek</div>
+      <div class="text-[13px] text-white/60 leading-relaxed">Wilayah operasional proyek yang sudah dikerjakan, melayani klien dari berbagai provinsi di Indonesia.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-white py-[88px] px-[5vw] grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+  <div class="relative hidden md:block">
+    <div class="w-full aspect-[4/3] bg-[#0D3B2E] rounded-xl flex items-center justify-center relative overflow-hidden">
+      <div class="absolute inset-0" style="background:repeating-linear-gradient(45deg,rgba(200,146,58,0.04) 0px,rgba(200,146,58,0.04) 1px,transparent 1px,transparent 24px)"></div>
+      <svg viewBox="0 0 200 200" width="200" class="opacity-15" fill="none" stroke="#C8923A" stroke-width="1">
+        <circle cx="100" cy="100" r="80"/><circle cx="100" cy="100" r="55"/><circle cx="100" cy="100" r="30"/>
+        <line x1="100" y1="20" x2="100" y2="180"/><line x1="20" y1="100" x2="180" y2="100"/>
+        <line x1="43" y1="43" x2="157" y2="157"/><line x1="157" y1="43" x2="43" y2="157"/>
+      </svg>
+      <div class="font-playfair text-[80px] font-black text-[#C8923A]/15 absolute bottom-5 right-6 leading-none">2019</div>
+    </div>
+    <div class="absolute -bottom-6 -left-6 bg-[#C8923A] text-white px-6 py-5 rounded-xl font-playfair">
+      <strong class="block text-[36px] font-black leading-none">2025</strong>
+      <span class="text-[12px] opacity-90 font-dm">Resmi Berdiri sebagai PT</span>
+    </div>
+  </div>
+  <div class="fade-in">
+    <div class="text-[11px] tracking-[0.14em] uppercase text-[#C8923A] font-semibold mb-3">Tentang Kami</div>
+    <h2 class="font-playfair text-[clamp(28px,4vw,44px)] font-bold text-[#0D3B2E] leading-tight mb-4">Dedikasi Penuh Untuk Akurasi Tanah</h2>
+    <p class="text-[15px] leading-[1.8] text-[#5A5A5A] mb-6">PT Cemara Golden Group adalah perusahaan Perseroan Terbatas yang bergerak di bidang jasa penyelidikan tanah dan topografi, berkedudukan di Kota Semarang, Jawa Tengah.</p>
+    <div class="flex flex-col mt-8">
+      <div class="flex gap-5 pb-7 relative">
+        <div class="relative z-10 w-9 h-9 rounded-full bg-[#0D3B2E] flex items-center justify-center flex-shrink-0 text-[13px] font-bold text-[#E4B06A]">19
+          <span class="absolute left-[17px] top-9 bottom-0 w-px bg-[#EDE6D6]" style="content:''"></span>
+        </div>
+        <div><strong class="block text-[14px] font-semibold mb-1">2019 – Merintis Usaha</strong><p class="text-[13px] text-[#5A5A5A] leading-relaxed">Memulai pekerjaan penyelidikan tanah dengan cita-cita melayani masyarakat melalui jalur ekonomi multibisnis.</p></div>
+      </div>
+      <div class="flex gap-5 pb-7 relative">
+        <div class="relative z-10 w-9 h-9 rounded-full bg-[#0D3B2E] flex items-center justify-center flex-shrink-0 text-[13px] font-bold text-[#E4B06A]">25
+          <span class="absolute left-[17px] top-9 bottom-0 w-px bg-[#EDE6D6]"></span>
+        </div>
+        <div><strong class="block text-[14px] font-semibold mb-1">24 April 2025 – Resmi Menjadi PT</strong><p class="text-[13px] text-[#5A5A5A] leading-relaxed">Akta pendirian No. 11 oleh Notaris Uddiyana Bhanda Adi N., S.H., M.Kn di Kabupaten Kendal.</p></div>
+      </div>
+      <div class="flex gap-5 pb-7">
+        <div class="w-9 h-9 rounded-full bg-[#0D3B2E] flex items-center justify-center flex-shrink-0 text-[13px] font-bold text-[#E4B06A]">→</div>
+        <div><strong class="block text-[14px] font-semibold mb-1">Kini & Masa Depan</strong><p class="text-[13px] text-[#5A5A5A] leading-relaxed">Terus berinovasi dan meningkatkan kualitas SDM untuk menjadi konsultan tanah terbesar dan terpercaya di Indonesia.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LAYANAN -->
+<section id="services" class="bg-[#F7F2E8] py-[88px] px-[5vw]">
+  <div class="fade-in">
+    <div class="text-[11px] tracking-[0.14em] uppercase text-[#C8923A] font-semibold mb-3">Layanan Kami</div>
+    <h2 class="font-playfair text-[clamp(28px,4vw,44px)] font-bold text-[#0D3B2E] leading-tight mb-4">Solusi Lengkap Penyelidikan Tanah</h2>
+    <p class="text-[16px] leading-[1.75] text-[#5A5A5A] max-w-[600px] mb-12">Kami menyediakan layanan teknis geoteknik dan topografi dengan peralatan terkalibrasi dan tenaga ahli bersertifikat.</p>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="relative bg-white border border-[#E8E0D0] rounded-xl p-8 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#C8923A]/40 hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)] fade-in before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-[#C8923A] before:scale-x-0 before:origin-left before:transition-transform hover:before:scale-x-100">
+      <div class="w-[52px] h-[52px] bg-[#0D3B2E] rounded-lg flex items-center justify-center mb-5"><svg class="w-[26px] h-[26px]" fill="none" stroke="#E4B06A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+      <div class="font-playfair text-[19px] font-bold text-[#0D3B2E] mb-2.5">Soil Investigation Test</div>
+      <p class="text-[14px] leading-[1.7] text-[#5A5A5A] mb-4">Penyelidikan tanah komprehensif untuk mendukung desain pondasi bangunan, jalan, jembatan, dan infrastruktur lainnya.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">N-SPT</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Sondir</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Sand Cone</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">CPT</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">CBR Lapangan</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Core Drill</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Hammer Test</span>
+      </div>
+    </div>
+    <div class="relative bg-white border border-[#E8E0D0] rounded-xl p-8 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#C8923A]/40 hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)] fade-in before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-[#C8923A] before:scale-x-0 before:origin-left before:transition-transform hover:before:scale-x-100">
+      <div class="w-[52px] h-[52px] bg-[#0D3B2E] rounded-lg flex items-center justify-center mb-5"><svg class="w-[26px] h-[26px]" fill="none" stroke="#E4B06A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 3l7 7-4 4 2 2 4-4 4 4 4-4-7-7L3 3z"/><path d="M13 13l4 4"/><circle cx="19" cy="19" r="2"/></svg></div>
+      <div class="font-playfair text-[19px] font-bold text-[#0D3B2E] mb-2.5">Topografi & Pengukuran</div>
+      <p class="text-[14px] leading-[1.7] text-[#5A5A5A] mb-4">Survei dan pengukuran lahan menggunakan peralatan Total Station dan Waterpass untuk peta situasi dan rencana konstruksi.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Total Station</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Waterpass</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Peta Kontur</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Situasi Lahan</span>
+      </div>
+    </div>
+    <div class="relative bg-white border border-[#E8E0D0] rounded-xl p-8 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#C8923A]/40 hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)] fade-in before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-[#C8923A] before:scale-x-0 before:origin-left before:transition-transform hover:before:scale-x-100">
+      <div class="w-[52px] h-[52px] bg-[#0D3B2E] rounded-lg flex items-center justify-center mb-5"><svg class="w-[26px] h-[26px]" fill="none" stroke="#E4B06A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0020 0h-3"/><circle cx="12" cy="8" r="4"/></svg></div>
+      <div class="font-playfair text-[19px] font-bold text-[#0D3B2E] mb-2.5">Bor Pile</div>
+      <p class="text-[14px] leading-[1.7] text-[#5A5A5A] mb-4">Pengerjaan bor pile kering maupun basah sebagai solusi pondasi dalam untuk bangunan bertingkat dan struktur berat.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Bor Pile Kering</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Bor Pile Basah</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Pondasi Dalam</span>
+      </div>
+    </div>
+    <div class="relative bg-white border border-[#E8E0D0] rounded-xl p-8 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-[#C8923A]/40 hover:shadow-[0_16px_40px_rgba(0,0,0,0.08)] fade-in before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-[#C8923A] before:scale-x-0 before:origin-left before:transition-transform hover:before:scale-x-100">
+      <div class="w-[52px] h-[52px] bg-[#0D3B2E] rounded-lg flex items-center justify-center mb-5"><svg class="w-[26px] h-[26px]" fill="none" stroke="#E4B06A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22V2"/><path d="M17 7l-5-5-5 5"/><path d="M17 17l-5 5-5-5"/><path d="M3 12h18"/></svg></div>
+      <div class="font-playfair text-[19px] font-bold text-[#0D3B2E] mb-2.5">Pengeboran Geoteknik Tambang</div>
+      <p class="text-[14px] leading-[1.7] text-[#5A5A5A] mb-4">Pengeboran eksplorasi mineral dan geoteknik untuk area pertambangan menggunakan metode Full Coring Wireline HQ.</p>
+      <div class="flex flex-wrap gap-1.5">
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Full Coring Wireline HQ</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Open Hole</span>
+        <span class="text-[11px] bg-[#EDE6D6] text-[#174D3C] px-2.5 py-1 rounded font-medium">Eksplorasi Mineral</span>
+      </div>
+    </div>
+  </div>
+  <div class="mt-8 bg-white border border-[#E0D8C8] rounded-xl p-7 flex gap-4 items-center">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8923A" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+    <div>
+      <div class="text-[14px] font-semibold text-[#0D3B2E] mb-1">Pengujian Laboratorium Mekanika Tanah</div>
+      <div class="text-[13px] text-[#5A5A5A]">Untuk layanan pengujian laboratorium, kami bekerja sama dengan Universitas Negeri dan Swasta Terakreditasi guna menjamin validitas dan keakuratan hasil.</div>
+    </div>
+  </div>
+</section>
+
+<!-- VISI MISI -->
+<section id="visi-misi" class="bg-[#0D3B2E] py-[88px] px-[5vw]">
+  <div class="fade-in">
+    <div class="text-[11px] tracking-[0.14em] uppercase text-[#C8923A] font-semibold mb-3">Fondasi Perusahaan</div>
+    <h2 class="font-playfair text-[clamp(28px,4vw,44px)] font-bold text-white leading-tight mb-4">Visi & Misi</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+    <div class="bg-white/5 border border-[#C8923A]/25 rounded-xl p-9 fade-in">
+      <div class="w-12 h-12 bg-[#C8923A]/15 rounded-lg flex items-center justify-center mb-5"><svg class="w-6 h-6" fill="none" stroke="#C8923A" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg></div>
+      <div class="font-playfair text-[22px] font-bold text-[#E4B06A] mb-4">Visi</div>
+      <p class="text-[15px] leading-[1.8] text-white/72">Menjadi perusahaan konsultan terbesar dan terpercaya, mengedepankan aspek masa depan yang berwawasan lingkungan, serta memberikan jasa konsultasi terbaik yang bertanggung jawab dan ekonomis secara profesional.</p>
+    </div>
+    <div class="bg-white/5 border border-[#C8923A]/25 rounded-xl p-9 fade-in">
+      <div class="w-12 h-12 bg-[#C8923A]/15 rounded-lg flex items-center justify-center mb-5"><svg class="w-6 h-6" fill="none" stroke="#C8923A" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+      <div class="font-playfair text-[22px] font-bold text-[#E4B06A] mb-4">Misi</div>
+      <p class="text-[15px] leading-[1.8] text-white/72">Menerapkan layanan konsultasi dengan proses sistematis dan profesional sebagai penunjang penting untuk memberikan hasil terbaik, berkualitas, aplikatif, dan mudah dimengerti — memuaskan klien dari perusahaan BUMN, swasta, maupun perorangan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section id="keunggulan" class="bg-white py-[88px] px-[5vw]">
+  <div class="fade-in text-center max-w-[600px] mx-auto mb-12">
+    <div class="text-[11px] tracking-[0.14em] uppercase text-[#C8923A] font-semibold mb-3">Mengapa Memilih Kami</div>
+    <h2 class="font-playfair text-[clamp(28px,4vw,44px)] font-bold text-[#0D3B2E] leading-tight">Keunggulan Kami</h2>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-5 fade-in">
+    <div class="text-center p-8 border border-[#EDE6D6] rounded-xl hover:border-[#C8923A] hover:bg-[#F7F2E8] transition-all">
+      <div class="font-playfair text-[48px] font-black text-[#0D3B2E] leading-none mb-2">6<span class="text-[#C8923A]">+</span></div>
+      <div class="text-[13px] text-[#5A5A5A] leading-snug font-medium">Tahun Pengalaman Aktif di Lapangan</div>
+    </div>
+    <div class="text-center p-8 border border-[#EDE6D6] rounded-xl hover:border-[#C8923A] hover:bg-[#F7F2E8] transition-all">
+      <div class="font-playfair text-[48px] font-black text-[#0D3B2E] leading-none mb-2">2</div>
+      <div class="text-[13px] text-[#5A5A5A] leading-snug font-medium">Ahli Geoteknik Bersertifikat BNSP</div>
+    </div>
+    <div class="text-center p-8 border border-[#EDE6D6] rounded-xl hover:border-[#C8923A] hover:bg-[#F7F2E8] transition-all">
+      <div class="font-playfair text-[48px] font-black text-[#0D3B2E] leading-none mb-2">KAN</div>
+      <div class="text-[13px] text-[#5A5A5A] leading-snug font-medium">Alat Terkalibrasi Laboratorium Terakreditasi KAN</div>
+    </div>
+    <div class="text-center p-8 border border-[#EDE6D6] rounded-xl hover:border-[#C8923A] hover:bg-[#F7F2E8] transition-all">
+      <div class="font-playfair text-[48px] font-black text-[#0D3B2E] leading-none mb-2">100<span class="text-[#C8923A]">+</span></div>
+      <div class="text-[13px] text-[#5A5A5A] leading-snug font-medium">Proyek Sondir & SPT Tersebar di Pulau Jawa</div>
+    </div>
+    <div class="text-center p-8 border border-[#EDE6D6] rounded-xl hover:border-[#C8923A] hover:bg-[#F7F2E8] transition-all">
+      <div class="font-playfair text-[48px] font-black text-[#0D3B2E] leading-none mb-2">PT</div>
+      <div class="text-[13px] text-[#5A5A5A] leading-snug font-medium">Badan Hukum Resmi Perseroan Terbatas</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTOFOLIO -->
+<section id="portofolio" class="bg-[#F7F2E8] py-[88px] px-[5vw]">
+  <div class="fade-in">
+    <div class="text-[11px] tracking-[0.14em] uppercase text-[#C8923A] font-semibold mb-3">Rekam Jejak</div>
+    <h2 class="font-playfair text-[clamp(28px,4vw,44px)] font-bold text-[#0D3B2E] leading-tight mb-4">Portofolio Proyek</h2>
+    <p class="text-[16px] leading-[1.75] text-[#5A5A5A] max-w-[600px] mb-12">Kami telah mengerjakan proyek di berbagai sektor, mulai dari infrastruktur pemerintah hingga gedung swasta.</p>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 fade-in">
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Brebes</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Jembatan Cidadali</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Brebes</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Jembatan Silontar Sirampong</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Brebes</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Ponpes Annabawy Wanasari</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Wonosobo</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Embung Banyumodal</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Semarang</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">RS Wahid Hasyim Gunungpati</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Sukoharjo</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Gedung PLN Bendosari</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Demak</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Tower Bedono</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Jakarta</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">AB SMK Farmasi Bhakti Husada Ciracas</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Cilacap</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Lapas Nusakambangan</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Tegal</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Pasar Randu Gunting</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Semarang</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Jembatan Gantung Tinjomoyo</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan SPT/Boring</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Magelang</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Renc. GOR Magelang</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan SPT/Boring</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Kendal</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Renc. Jembatan KPI Kendal</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan SPT/Boring</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Tulungagung</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Renc. Jembatan Gondang</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan SPT/Boring</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Malang</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Renc. DPT Longsoran Sumbermanjing</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan SPT/Boring</div></div>
+    <div class="bg-white border border-[#EDE6D6] rounded-lg p-4 hover:border-[#C8923A] hover:-translate-y-0.5 transition-all"><div class="text-[10px] tracking-widest uppercase text-[#C8923A] font-semibold mb-1.5">Grobogan</div><div class="text-[13px] font-semibold text-[#0D3B2E] leading-snug">Mother Station Purwodadi</div><div class="text-[11px] text-[#5A5A5A] mt-1">Pekerjaan Sondir</div></div>
+  </div>
+</section>
+
+<!-- LEGALITAS -->
+<section id="legalitas" class="bg-[#0D3B2E] py-[88px] px-[5vw]">
+  <div class="fade-in">
+    <div class="text-[11px] tracking-[0.14em] uppercase text-[#C8923A] font-semibold mb-3">Legalitas Perusahaan</div>
+    <h2 class="font-playfair text-[clamp(28px,4vw,44px)] font-bold text-white leading-tight mb-4">Data & Dokumen Resmi</h2>
+    <p class="text-[16px] leading-[1.75] text-white/60 max-w-[600px] mb-12">PT Cemara Golden Group beroperasi dengan dasar hukum yang kuat dan terdaftar resmi di Indonesia.</p>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 fade-in">
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">Nama Perusahaan</div><div class="text-[15px] font-medium text-white leading-snug">PT Cemara Golden Group</div><div class="text-[12px] text-white/45">Perseroan Terbatas</div></div>
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">Direktur</div><div class="text-[15px] font-medium text-white leading-snug">Andreas Andi Julianto</div><div class="text-[12px] text-white/45">Pemegang 70% saham</div></div>
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">Akta Pendirian</div><div class="text-[15px] font-medium text-white leading-snug">No. 11 — 24 April 2025</div><div class="text-[12px] text-white/45">Notaris Uddiyana Bhanda Adi N., SH., MKn</div></div>
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">NPWP</div><div class="text-[15px] font-medium text-white leading-snug">1000 0000 0170 8182</div><div class="text-[12px] text-white/45">Terdaftar 25 April 2025 — KPP Pratama Semarang Gayamsari</div></div>
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">Tenaga Ahli</div><div class="text-[15px] font-medium text-white leading-snug">Anis Kholik — Ahli Geoteknik</div><div class="text-[12px] text-white/45">SKK No. 74321 2142.99 9 00034778 2025 — Level 9 BNSP (2025)</div></div>
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">Tenaga Ahli</div><div class="text-[15px] font-medium text-white leading-snug">Ridwan Chandra — Ahli Muda Geoteknik</div><div class="text-[12px] text-white/45">SKK No. 74321 2142.99 7 00054236 2023 — Level 7 BNSP (2023)</div></div>
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">Kalibrasi Alat</div><div class="text-[15px] font-medium text-white leading-snug">Proving Ring & Pressure Gauge</div><div class="text-[12px] text-white/45">Terkalibrasi oleh Laboratorium Terakreditasi KAN (Sep 2025 & Feb 2024)</div></div>
+    <div class="bg-white/[0.06] border border-[#C8923A]/20 rounded-xl px-7 py-6 flex flex-col gap-1.5"><div class="text-[10px] tracking-[0.12em] uppercase text-[#E4B06A] font-semibold">Asosiasi</div><div class="text-[15px] font-medium text-white leading-snug">PERPAKOM</div><div class="text-[12px] text-white/45">Perkumpulan Tenaga Profesional & Ahli Konstruksi Mandiri</div></div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="bg-[#F7F2E8] py-[88px] px-[5vw]">
+  <div class="fade-in">
+    <div class="text-[11px] tracking-[0.14em] uppercase text-[#C8923A] font-semibold mb-3">Hubungi Kami</div>
+    <h2 class="font-playfair text-[clamp(28px,4vw,44px)] font-bold text-[#0D3B2E] leading-tight mb-4">Mari Berdiskusi</h2>
+    <p class="text-[16px] leading-[1.75] text-[#5A5A5A] max-w-[600px] mb-12">Konsultasikan kebutuhan penyelidikan tanah Anda kepada tim ahli kami. Kami siap membantu dari tahap perencanaan hingga pelaporan hasil.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+    <div class="fade-in">
+      <p class="text-[15px] leading-[1.8] text-[#5A5A5A] mb-4">Hubungi kami langsung melalui saluran di bawah. Tim kami siap merespons kebutuhan proyek Anda dengan cepat.</p>
+      <div class="bg-[#0D3B2E] rounded-xl px-6 py-5 text-white/75 text-[14px] leading-[1.7]">Kami melayani klien dari sektor <strong class="text-white">pemerintah, BUMN, swasta, dan perorangan</strong> di seluruh wilayah Jawa dan sekitarnya.</div>
+    </div>
+    <div class="flex flex-col gap-4 fade-in">
+      <a href="https://wa.me/6281227438578?text=Halo%20Cemara%20Geodrill%2C%20saya%20ingin%20konsultasi%20mengenai%20penyelidikan%20tanah." target="_blank" class="bg-white border border-[#E0D8C8] rounded-2xl p-6 flex items-center gap-5 no-underline hover:border-[#C8923A]/50 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.08)] transition-all">
+        <div class="w-[60px] h-[60px] rounded-[14px] bg-[#25D366] flex items-center justify-center flex-shrink-0"><svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+        <div class="flex-1"><div class="text-[16px] font-bold text-[#0D3B2E] mb-0.5">WhatsApp</div><div class="text-[14px] text-[#5A5A5A]">+62 812-2743-8578</div><div class="text-[13px] text-[#C8923A] font-semibold mt-1">Chat Sekarang →</div></div>
+      </a>
+      <a href="https://www.google.com/maps/search/Jl.+Parang+Kusumo+XI+No.+82+Semarang" target="_blank" class="bg-white border border-[#E0D8C8] rounded-2xl p-6 flex items-center gap-5 no-underline hover:border-[#C8923A]/50 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.08)] transition-all">
+        <div class="w-[60px] h-[60px] rounded-[14px] bg-[#1A1A1A] flex items-center justify-center flex-shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" width="28" height="28"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="flex-1"><div class="text-[16px] font-bold text-[#0D3B2E] mb-0.5">Office</div><div class="text-[14px] text-[#5A5A5A] leading-snug">Jl. Parang Kusumo XI No. 82<br>Tlogosari Kulon, Pedurungan, Semarang</div><div class="text-[13px] text-[#C8923A] font-semibold mt-1">Buka di Google Maps →</div></div>
+      </a>
+      <a href="mailto:cemara.geodrill@gmail.com" class="bg-white border border-[#E0D8C8] rounded-2xl p-6 flex items-center gap-5 no-underline hover:border-[#C8923A]/50 hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(0,0,0,0.08)] transition-all">
+        <div class="w-[60px] h-[60px] rounded-[14px] bg-[#0D3B2E] flex items-center justify-center flex-shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" width="28" height="28"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div class="flex-1"><div class="text-[16px] font-bold text-[#0D3B2E] mb-0.5">Email</div><div class="text-[14px] text-[#5A5A5A]">cemara.geodrill@gmail.com</div><div class="text-[13px] text-[#C8923A] font-semibold mt-1">Kirim Email →</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#080F0C] text-white/55 px-[5vw] pt-12 pb-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+  <div>
+    <div class="font-playfair text-[20px] font-bold text-white mb-2">PT Cemara Golden Group</div>
+    <div class="text-[12px] tracking-widest uppercase text-[#C8923A] mb-3">Pusat Penyelidikan Tanah & Topografi</div>
+    <p class="text-[13px] leading-[1.65]">Mitra terpercaya dalam jasa geoteknik, penyelidikan tanah, dan pengukuran topografi. Melayani proyek pemerintah, BUMN, swasta, dan perorangan di seluruh Indonesia sejak 2019.</p>
+  </div>
+  <div>
+    <div class="text-[12px] font-semibold tracking-widest uppercase text-[#E4B06A] mb-4">Navigasi</div>
+    <ul class="list-none flex flex-col gap-2.5">
+      <li><a href="#about" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Tentang Kami</a></li>
+      <li><a href="#services" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Layanan</a></li>
+      <li><a href="#visi-misi" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Visi & Misi</a></li>
+      <li><a href="#portofolio" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Portofolio</a></li>
+      <li><a href="#legalitas" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Legalitas</a></li>
+      <li><a href="#kontak" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Kontak</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="text-[12px] font-semibold tracking-widest uppercase text-[#E4B06A] mb-4">Layanan Utama</div>
+    <ul class="list-none flex flex-col gap-2.5">
+      <li><a href="#services" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Soil Investigation</a></li>
+      <li><a href="#services" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Sondir & SPT</a></li>
+      <li><a href="#services" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Topografi</a></li>
+      <li><a href="#services" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Bor Pile</a></li>
+      <li><a href="#services" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Pengeboran Tambang</a></li>
+      <li><a href="#services" class="text-white/55 text-[13px] no-underline hover:text-[#E4B06A] transition-colors">Uji Lab Mekanika Tanah</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="bg-[#080F0C] border-t border-white/[0.07] px-[5vw] py-5 text-center text-[12px] text-white/30">
+  © 2025 PT Cemara Golden Group · Jl. Parang Kusumo XI No. 82, Semarang · +62 812-2743-8578 · cemara.geodrill@gmail.com
+</div>
+
+<style>
+  @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+</style>
+
+</body>
+</html>
